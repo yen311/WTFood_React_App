@@ -1,0 +1,143 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  z-index: 3;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px rgb(181, 180, 180) solid;
+    align-items: center;
+    background-color: #f4b71f;
+    font-family: 'Permanent Marker', cursive;
+    height: 10vh;
+    .logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      .logo-img {
+        height: 5rem;
+      }
+      .logo-text {
+        width: 20rem;
+        color: black;
+        font-size: 2rem;
+        position: relative;
+        z-index: 1;
+      }
+      .logo-text::before {
+        content: 'FIND YOUR MEAL';
+        position: absolute;
+        color: white;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #f4b71f;
+        transition: transform 300ms ease-in-out;
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+      .logo-text:hover::before {
+        transform: scaleX(1);
+      }
+    }
+    .nav-ul {
+      list-style: none;
+      display: flex;
+      .nav-btn {
+        position: relative;
+        font: inherit;
+        margin-right: 4rem;
+        height: 3rem;
+        width: 6rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: 3px solid rgb(0, 0, 0);
+        z-index: 1;
+        --animation-color: black;
+      }
+      .welcome {
+        font: inherit;
+        margin-right: 4em;
+      }
+      .nav-btn:hover {
+        color: white;
+      }
+      .nav-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: var(--animation-color);
+        transition: transform 300ms ease-in-out;
+
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+      .nav-btn:hover::before {
+        transform: scaleX(1);
+      }
+    }
+    .nav-icon,
+    .car-logo {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    .nav-container {
+      .logo {
+        .logo-text::before {
+          content: 'Fantasty';
+        }
+      }
+      .nav-ul {
+        padding: 0;
+        margin: 0;
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        position: absolute;
+        top: 10vh;
+        right: -100%;
+        opacity: 0.9;
+        transition: all 0.5s ease-out;
+        .nav-btn {
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 4rem;
+          border: 5px solid black;
+        }
+        .car-logo {
+          text-align: center;
+          display: inline-block;
+          height: 10rem;
+        }
+      }
+      .nav-ul.open {
+        background-color: #f4b71f;
+        right: 0%;
+        transition: all 0.5s ease-in-out;
+      }
+      .nav-icon {
+        display: block;
+        font-size: 2rem;
+        position: fixed;
+        right: 5%;
+        cursor: pointer;
+        z-index: 4;
+      }
+    }
+  }
+}

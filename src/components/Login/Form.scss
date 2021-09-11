@@ -1,0 +1,77 @@
+.container {
+  display: inherit;
+  margin: 0% 10%;
+  text-align: center;
+  .login-container {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 30vh;
+    .login {
+      height: 60vh;
+    }
+    .login:nth-child(1) {
+      height: 100%;
+      width: 40%;
+      background-color: black;
+    }
+    .login:nth-child(2) {
+      height: 100%;
+      width: 60%;
+      background-color: #f4b71f;
+      .sign-in-form {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 100%;
+        margin: 5% auto;
+        width: 60%;
+        border-radius: 20px;
+        box-shadow: 5px 5px rgba(255, 255, 255, 0.612);
+        .submit-error {
+          color: rgb(254, 113, 113);
+        }
+        .form-link {
+          text-decoration: none;
+          color: white;
+          font-size: 12pt;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    margin: 10% 10%;
+    .login-container {
+      background-color: #f4b71f;
+      height: 70vh;
+      .login:nth-child(1) {
+        display: none;
+      }
+      .login:nth-child(2) {
+        background-color: #f4b71f;
+        width: 80vw;
+        .sign-in-form {
+          background-color: black;
+          margin-top: 10%;
+          width: 100%;
+          height: 65vh;
+          border-radius: 0px;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .container {
+    .login-container {
+      height: 75vh;
+    }
+  }
+}

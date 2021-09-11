@@ -1,0 +1,17 @@
+.form-header {
+  margin: 5% auto;
+  border-bottom: 1px dotted white;
+}
+
+@media screen and (max-width: 950px) {
+  .form-header {
+    margin: 5% auto;
+    border-bottom: 1px dotted white;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .form-header {
+    margin: 0 auto !important;
+  }
+}

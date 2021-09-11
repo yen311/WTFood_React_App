@@ -1,0 +1,50 @@
+.main-search-container {
+  display: flex;
+  background-color: black;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 5px;
+
+  .main-search-span {
+    height: inherit;
+    font-size: 1.5em;
+    margin: 0px 10px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+  }
+  input:nth-child(2) {
+    width: 70%;
+  }
+  input:nth-child(4) {
+    width: 30%;
+  }
+  .main-search-input {
+    background-color: #f4b71f;
+    font-size: 16pt;
+    color: white;
+  }
+
+  .main-search-btn {
+    background-color: black;
+    border: 0.5px solid black;
+  }
+  .main-search-icon {
+    color: white;
+    font-size: 20pt;
+    cursor: pointer;
+    transition: color 300ms ease-out;
+  }
+  .main-search-icon:hover {
+    color: rgb(244, 136, 21);
+  }
+}
+.error {
+  margin: 2em;
+  text-align: center;
+  color: rgb(140, 0, 0);
+  font-weight: bold;
+}
+.spinner {
+  margin: 10% 45%;
+}

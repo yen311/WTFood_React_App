@@ -1,0 +1,47 @@
+.container-advanced {
+  display: flex;
+  margin: 0 auto;
+  font-size: 25px;
+
+  font-family: "Permanent Marker", cursive;
+  .fa-sign-in-alt,
+  .fa-window-close {
+    font-size: 2rem;
+    margin: 1rem 2rem 1rem 1rem;
+    cursor: ew-resize;
+  }
+  .fa-sign-in-alt:hover,
+  .fa-window-close:hover {
+    color: #f4b71f;
+    cursor: ew-resize;
+  }
+  .container-items {
+    display: flex;
+    margin: auto 0;
+    .fa-dollar-sign {
+      margin: 4px;
+    }
+    label {
+      margin: 10px 5px 10px 15px;
+    }
+    input {
+      color: #f4b71f;
+      background-color: black;
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 20px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      background-color: #f4b71f;
+      width: 10px;
+      height: 30px;
+    }
+    input[type="checkbox"] {
+      filter: invert(100%) hue-rotate(30deg) brightness(1.5);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.notfound {
+  position: relative;
+  z-index: 1;
+
+  .background-notfound {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../assets//404.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: right top;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .notfound-btn {
+    top: 50px;
+    left: 50px;
+  }
+}

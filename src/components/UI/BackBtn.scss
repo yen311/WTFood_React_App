@@ -1,0 +1,48 @@
+.back-btn-container {
+  width: 8vw;
+  background-color: white;
+  font-family: 'Permanent Marker', cursive;
+  padding: 8px;
+  margin-bottom: 50px;
+  margin-top: 5vh;
+  position: relative;
+  z-index: 1;
+  box-shadow: 5px 5px rgba($color: #ffffff, $alpha: 0.5);
+  .back-btn {
+    font-size: 12pt;
+    width: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+}
+.back-btn-container::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  border: 2px solid white;
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 300ms ease-in-out;
+}
+.back-btn-container:hover::before {
+  top: calc(-4px);
+  bottom: calc(-4px);
+  left: calc(-4px);
+  right: calc(-4px);
+}
+
+@media screen and (max-width: 950px) {
+  .back-btn-container {
+    padding: 5px;
+    width: 30vw;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    .back-btn {
+      font-size: 8pt;
+    }
+  }
+}

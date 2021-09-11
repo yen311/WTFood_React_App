@@ -1,0 +1,66 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+.invalid {
+  border: 3px solid rgb(176, 0, 0);
+}
+.error-message {
+  font-size: 8pt;
+  color: rgb(254, 113, 113);
+}
+
+.form-input {
+  float: left;
+  margin-left: 20px;
+  width: 80%;
+  height: 18px;
+}
+.submit-btn {
+  font-family: 'Permanent Marker', cursive;
+  width: 20%;
+  margin: 5% auto;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.submit-btn-disabled {
+  font-family: 'Permanent Marker', cursive;
+  width: 20%;
+  margin: 5% auto;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+  cursor: not-allowed;
+  background-color: grey;
+}
+.submit-btn:hover,
+.form-link:hover {
+  background-color: #f4b71f;
+}
+
+@media screen and (max-width: 950px) {
+  .submit-btn {
+    width: 50%;
+  }
+  .form-input {
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 10px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  form {
+    height: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .form-input {
+    margin-bottom: 0px !important;
+    height: 10px !important;
+  }
+}
