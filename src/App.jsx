@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect, HashRouter } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/HomePage/index';
 import DetailPages from './pages/DetailPage/index';
@@ -13,27 +13,26 @@ function App() {
 
   return (
     <React.Fragment>
-      <div className='page-container'>
-        <main>
-          <Switch>
-            <Route path='/WTFood_React_App' exact>
-              <Redirect to='/home' />
-            </Route>
-            <Route path='/' exact>
-              <Redirect to='/home' />
-            </Route>
-            <Route path='/home' component={HomePage} exact />
+      <HashRouter>
+        <div className='page-container'>
+          <main>
+            <Switch>
+              <Route path='/' exact>
+                <Redirect to='/home' />
+              </Route>
+              <Route path='/home' component={HomePage} exact />
 
-            <Route
-              path='/home/:id'
-              component={isLogin ? DetailPages : LoginPage}
-            ></Route>
-            <Route path='/login' component={LoginPage} exact />
-            <Route path='/sign-up' component={SignUpPage} exact />
-            <Route path='*' component={NotFound} />
-          </Switch>
-        </main>
-      </div>
+              <Route
+                path='/home/:id'
+                component={isLogin ? DetailPages : LoginPage}
+              ></Route>
+              <Route path='/login' component={LoginPage} exact />
+              <Route path='/sign-up' component={SignUpPage} exact />
+              <Route path='*' component={NotFound} />
+            </Switch>
+          </main>
+        </div>
+      </HashRouter>
     </React.Fragment>
   );
 }
