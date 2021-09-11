@@ -16,9 +16,13 @@ function App() {
       <div className='page-container'>
         <main>
           <Switch>
+            <Route path='/WTFood_React_App' exact>
+              <Redirect to='/home' />
+            </Route>
             <Route path='/' exact>
               <Redirect to='/home' />
             </Route>
+
             <Route path='/home' component={HomePage} exact />
 
             <Route
