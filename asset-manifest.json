@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/WTFood_React_App/static/css/main.10ad4215.chunk.css",
+    "main.js": "/WTFood_React_App/static/js/main.f38cbb5c.chunk.js",
+    "main.js.map": "/WTFood_React_App/static/js/main.f38cbb5c.chunk.js.map",
+    "runtime-main.js": "/WTFood_React_App/static/js/runtime-main.2175207a.js",
+    "runtime-main.js.map": "/WTFood_React_App/static/js/runtime-main.2175207a.js.map",
+    "static/js/2.9424fbad.chunk.js": "/WTFood_React_App/static/js/2.9424fbad.chunk.js",
+    "static/js/2.9424fbad.chunk.js.map": "/WTFood_React_App/static/js/2.9424fbad.chunk.js.map",
+    "index.html": "/WTFood_React_App/index.html",
+    "static/css/main.10ad4215.chunk.css.map": "/WTFood_React_App/static/css/main.10ad4215.chunk.css.map",
+    "static/js/2.9424fbad.chunk.js.LICENSE.txt": "/WTFood_React_App/static/js/2.9424fbad.chunk.js.LICENSE.txt",
+    "static/media/NotFoundContent.scss": "/WTFood_React_App/static/media/404.f7cf6e92.jpg",
+    "static/media/car.e3d5b9fb.png": "/WTFood_React_App/static/media/car.e3d5b9fb.png",
+    "static/media/index.scss": "/WTFood_React_App/static/media/main.6e4720bf.jpg",
+    "static/media/unavaliable.ed0ba931.jpg": "/WTFood_React_App/static/media/unavaliable.ed0ba931.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2175207a.js",
+    "static/js/2.9424fbad.chunk.js",
+    "static/css/main.10ad4215.chunk.css",
+    "static/js/main.f38cbb5c.chunk.js"
+  ]
+}
