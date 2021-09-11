@@ -14,10 +14,14 @@ Here's my email kuoyen5@gmail.com. Feel free to let me know any bugs you found o
 * The layout doesn't fit well on mobile.
 ### Home page 
 <img width="500" heigth="300" alt="Screen Shot 2021-09-11 at 11 07 23 pm" src="https://user-images.githubusercontent.com/62017108/132948830-9414332b-faff-4ceb-9bb8-2ac8509fa6ac.png">
+
 ### Login && Sign-up
 <img width="500" heigth="300" alt="Screen Shot 2021-09-11 at 11 14 11 pm" src="https://user-images.githubusercontent.com/62017108/132949034-490e4c97-3bdc-460f-bc43-35079518ec0e.png">
 <img width="500" heigth="300" alt="Screen Shot 2021-09-11 at 11 14 05 pm" src="https://user-images.githubusercontent.com/62017108/132949036-da398555-091f-4cf5-8345-acda93ae8235.png">
 
+### Search Result
+<img width="500" heigth="300" alt="Screen Shot 2021-09-11 at 11 15 59 pm" src="https://user-images.githubusercontent.com/62017108/132949105-bad5567c-bc06-49c6-9247-0930fb240833.png">
 
-
+### Detail 
+![Screen Shot 2021-09-11 at 11 16 56 pm](https://user-images.githubusercontent.com/62017108/132949148-92210244-bcf6-4645-944f-d6666397106b.png)
 
